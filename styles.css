@@ -1,0 +1,145 @@
+:root{
+    --background-color: #FFF3E0;
+    --background-color-container:#ffffff;
+    --text-color:  #5D4037;
+    --line-color: #5D4037;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    line-height: 1.5;
+}
+
+.sandwich-section img{
+    width: 70%;
+    height: auto;
+    display: block;   /*makes the page act more block like
+    where it takes up the entire width that is available and 
+    it is able to create new lines before and after it, good for 
+    structuring the layout and controlling how the elements are going to stack up one another
+    it is kinda like lego bricks, placing them one on top of the other
+    and each brick takes up an entire row*/
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin-bottom: 16px;
+    margin: 0 auto;
+}
+
+.container-section {
+    max-width: 800px;
+    background-color: var(--background-color-container);
+    margin: 32px;
+    padding:16px;
+    border-radius: 16px;
+}
+.header-section {
+    text-align: center;
+}
+
+.header-section h1{
+    font-weight: 400px;  /*font weight is able to control
+    the thickness of the text and a font weight of 400
+    is normal and somewhere with 700+ is for bolder textwhat i*/
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 16px;
+}
+
+.header-section hr{
+    width: 50%;
+    height: 5px;
+    margin: 0 auto;
+    
+    background-color: var(--line-color);
+}
+
+.header-section span{
+    margin: 16px 0;
+    display: block;
+    text-align: center;
+}
+
+.preptime-section{
+    margin-bottom: 24px;
+}
+
+
+.preptime-section .prep h3{
+    color:var(--text-color);
+    font-weight: 400px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.preptime-section .prep ul{
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.preptime-section .prep ul li::marker{
+    color:var(--text-color);
+}
+
+.ingredients-section{
+    margin-bottom: 24px;
+}
+
+.ingredients-section .items h3{
+    color:var(--text-color);
+    font-weight: 400px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.ingredients-section .items ul{
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.ingredients-section .items ul li::marker{
+    color:var(--text-color);
+}
+
+.instruct-section .instructions h3{
+    color:var(--text-color);
+    font-weight: 400px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.instruct-section .instructions ol{
+    /*this makes the ordered list, display with numbers instead
+    of them being bullet points */
+    list-style-type: decimal;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.instruct-section .instructions ol li::marker{
+    color:var(--text-color);
+}
+
+.instruct-section .instructions ol b{
+    color:var(--text-color); 
+}
